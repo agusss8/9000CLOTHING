@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: white;
+    border-bottom: 1.6px solid black;
+   
+}
+.navcontainer{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main 
+{
+    background-color: black;
+}
+
+a {
+    text-decoration: none; /* Quita cualquier subrayado */
+    border: none; /* Asegura que no haya bordes en el enlace */
+}
+.logo 
+{
+    margin-right: auto;
+}
+.navmenu
+{
+    margin-left: auto;
+}

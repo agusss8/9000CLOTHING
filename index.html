@@ -3,30 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+   
     <title>9000CLOTHING</title>
+    <link rel="icon" href="9000logo.png" type="png">
 </head>
 <body>
-    
-<header>
-    <nav class="navcontainer">
+    <header>
 
-            <a href="index.html" class="logo">
-                <img src="9000logo.png" alt="9000CLOTHING" width="6%" height="4%">
-            </a>
-        
-        <div class="navmenu">
-            <ul class="navbar">
-                <img src="search_icon.png" alt="search" width="1%">  
-            </ul>
+        <div class="secciones">
+            <h4 class="seccion"><a href="paginaprincipal.html">NEW DROPS</a></h4>
+            <h4 class="seccion"><a href="index.html">T-SHIRTS</a></h4>
+            <h4 class="seccion"><a href="hoodies.html">HOODIES</a></h4>
+            <h4 class="seccion"><a href="aboutus.html">ABOUT US</a></h4>
         </div>
+    
+       <div class="logo">
+            <a href="paginaprincipal.html" class="logo">
+                <img src="9000logo.png" alt="9000CLOTHING" width="110px" height="65px">
+            </a>
+       </div> 
+    
+    
+        <nav class="navcontainer">
+            <ul class="contenedorlista">
+                <li class="icon">
+                    <a href="index.html"><img src="magnifying-glass.png" alt="user" width="26px" height="26px"></a>
+                </li>
+                 <li class="icon">
+                    <a href="index.html"><img src="shopping-bag.png" alt="search" width="26px" height="26px"></a>
+                 </li>
+                 <li class="icon">
+                    <a href="index.html"><img src="avatar.png" alt="cart" width="26px" height="26px"></a>
+                 </li>
+            </ul>
+        </nav>
+    </header>
 
-        
-    </nav>
-</header>
+
+
 <main>
 
+<aside>
+    <div class="goback">
+        <p> <a href="paginaprincipal.html">Inicio</a> > <a href="index.html">Remeras</a></p>
+    </div>
+
+    <form method="GET" action="ruta_a_tu_tienda">
+        <label for="sort" class="sortlabel">SORT BY:</label>
+        <select name="sort" id="sort" onchange="this.form.submit()">
+          <option value="default">RELEVANCIA</option>
+          <option value="price-asc">PRECIO: MENOR A MAYOR</option>
+          <option value="price-desc">PRECIO: MAYOR A MENOR</option>
+          <option value="name-asc">NOMBRE: A-Z</option>
+          <option value="name-desc">NOMBRE: Z-A</option>
+        </select>
+      </form>
+      
+</aside>
+
+<article class="primerafila">
+    <div class="articulo">
+       <a href="remeracomprar.html"> 
+            <img src="camisetasnani/camiseta1.png" alt="camiseta1" width="100%" class="artimgtxt">
+            <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+        </a> 
+    </div>
+    <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/333remera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+     <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/obbeyallianceremera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+     <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/zanbororemera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+</article>
+
+<article class="primerafila">
+    <div class="articulo">
+       <a href="remeracomprar.html"> 
+            <img src="camisetasnani/camiseta1.png" alt="camiseta1" width="100%" class="artimgtxt">
+            <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+        </a> 
+    </div>
+    <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/333remera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+     <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/obbeyallianceremera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+     <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/zanbororemera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+</article>
+
+<article class="primerafila">
+    <div class="articulo">
+       <a href="remeracomprar.html"> 
+            <img src="camisetasnani/camiseta1.png" alt="camiseta1" width="100%" class="artimgtxt">
+            <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+        </a> 
+    </div>
+    <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/333remera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+     <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/obbeyallianceremera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+     <div class="articulo">
+        <a href="remeracomprar.html"> 
+             <img src="camisetasnani/zanbororemera.png" alt="camiseta1" width="100%" class="artimgtxt">
+             <div class="textoarticulo">
+                <p class="txtart">Ejemplo Articulo X</p>
+                <p class="txtprecio">$ 49.999</p>
+             </div>
+         </a> 
+     </div>
+</article>
+
 </main>
+
+<footer>
+   
+    <div class="partecentro">
+
+        <div class="menu">
+            <p id="menufooter"><a href="paginaprincipal.html">Menu</a></p>
+                <ul class="listaitemsmenufooter">
+                    <li ><p><a href="paginaprincipal.html">NEW DROPS</a></p></li>
+                    <li><p><a href="index.html">T-SHIRTS</a></p></li>
+                </ul>
+                <ul class="listaitemsmenufooter">
+                    <li><p><a href="hoodies.html">HOODIES</a></p></li>
+                    <li><p><a href="aboutus.html">ABOUT US</a></p></li>
+                </ul>   
+        </div>
+        <div class="newsletter">
+            <p id="soportetexto">Soporte</p>
+            <form action="https://formspree.io/f/mnnqprql" method="POST">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" id="email" >
+            <label for="mensaje">Mensaje</label>
+            <textarea name="message" id="mensaje" placeholder="Redactar problema..."  rows="5" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </div>
+        <div class="infocontacto">
+            <p id="contactanosfooter">Contactanos</p>
+            <p class="email">example-mail@example.com</p>
+            <p class="email">5491123424952</p>
+            <p class="email">+54 911 2342 4952</p>
+            <p class="email">Av. Falsa 1184 Buenos Aires</p>
+        </div>
+    </div>
+
+</footer>
+
+<div class="postfooterderechos">
+    <div class="derechos">
+        <p>© 9000CLOTHING - 2024</p>
+    </div>
+    <div class="redess">
+        <a href="index.html"> 
+            <img src="instagram (3).png" alt="Instagram" width="16px"> 
+        </a>
+        <a href="index.html"> 
+            <img src="twitter (1).png" alt="Instagram" width="16px"> 
+        </a>
+        <a href="index.html"> 
+            <img src="tik-tok.png" alt="Instagram" width="16px"> 
+        </a>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
 
 </body>
 </html>

@@ -1,35 +1,593 @@
 body, html {
     margin: 0;
     padding: 0;
+  /*  font-family: "Courier Prime";  */
+  font-family: 'Helvetica Neue', sans-serif;
+                                                
+}  
+a {
+    text-decoration: none; /* Quita cualquier subrayado */
+    border: none; /* Asegura que no haya bordes en el enlace */
+    color: inherit;
+}
+p
+{
+    font-family: "Courier Prime"; 
+}
+option
+{
+    font-family: "Courier Prime"; 
 }
 header {
     background-color: white;
     border-bottom: 1.6px solid black;
-   
-}
-.navcontainer{
-    
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.seccion
+{
+    display: inline-block;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-weight: 600;
+}
+.seccion:hover
+{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);   
+
+}
+.secciones
+{
+    margin-top: 13px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    width: 33.3%;
+    
+}
+.navcontainer
+{
+
+   /* display: flex; */
+    font-size: 30px;
+    margin-left: auto;
+    width: 33.3%;
+    display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
-    align-items: center;
+    
+}
+.contenedorlista
+{
+    padding-left: 0px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    margin-top: 27px;
+}
+.icon
+{
+    margin-right: 15px;
+}
+.logo
+{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    margin-right: 13px;
+}
+li
+{
+    list-style-type: none;
+    display: inline;
+}
+.primerafila
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.articulo
+{
+    border-right: 1.6px solid black;
+    border-bottom: 1.6px solid black;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    padding-top: 50px;
+}
+aside
+{
+    border-bottom: 1.6px solid black ;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+aside form
+{
+    display: flex;
     justify-content: center;
 }
-
-main 
+.goback
 {
+    font-size: 15px;
+}
+.textoarticulo
+{
+border-top: 1.6px solid black;
+}
+.artimgtxt:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+}
+.txtart
+{   
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.txtprecio
+{
+    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+.sortlabel
+{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 16px;
+    padding-right: 10px;
+}
+#sort
+{
+    border: 1.6px solid black; 
+    text-align: center;
+}
+
+
+/* footer */
+footer
+{
+    background-color: white;
+    display: flex;
+    flex-direction: ROW;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+footer p
+{
+    font-size: 17px;
+}
+.partecentro
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.infocontacto
+{
+    text-align: center;
+    width: 33.3% ;
+}
+#contactanosfooter
+{
+    font-weight: bold;
+}
+.menu
+{
+    width: 33.3%;
+    text-align: center;
+}
+#menufooter
+{
+    font-weight: bold;
+}
+.listaitemsmenufooter
+{
+    padding-left: 0px;
+}
+.newsletter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 33.3%;
+}
+.newsletter form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter button
+{
+    margin-top: 15px;
+    width: 70%;
+    height: 35px;
+    border-radius: 20px;
+    border: 1.6px solid black;
+    margin-bottom: 20px;
+    font-family: "Courier Prime"; 
+    cursor: pointer;
+}
+.newsletter input
+{
+    width: 70%;
+    border-radius: 2px;
+    border: 1.6px solid black;
+    height: 20px;
+    font-size: 14px;
+}
+.newsletter p
+{
+    font-weight: bold;
+}
+.newsletter label
+{
+    font-family: "Courier Prime"; 
+    font-size: 14px;
+    margin: 10px;
+}
+.newsletter textarea
+{
+    width: 70%;
+    resize: none;
+    font-size: 14px;
+    font-family: "Arial";
+    font-weight: 300;
+    border-radius: 2px;
+    border: 1.6px solid black;
+}
+#soportetexto
+{
+    margin-bottom: 6px;
+    margin-top: 17px;
+}
+
+/*postfooter*/
+
+.postfooterderechos
+{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.6px solid black;
+}
+.derechos
+{
+    font-size: 13px;
+    margin: 10px;
+}
+.redess
+{
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+.redess img
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+/*pagina principal */
+.presentacion
+{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1.6px solid black;
+}
+.contenedor1
+{
+    width: 33.3%;
+}
+.contenedor2
+{
+    width: 33.3%;
+    border-left: 1.6px solid black ;
+    border-right: 1.6px solid black ;
+}
+.contenedor3
+{
+    width: 33.3%;
+}
+.fondocompleto
+{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    border-top: 1.6px solid black;
+    border-bottom: 1.6px solid black;
+}
+.contenedor1:hover {
+
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra para efecto de profundidad */
+}
+.contenedor2:hover {
+
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra para efecto de profundidad */
+}
+.contenedor3:hover {
+
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra para efecto de profundidad */
+}
+.adbar
+{
+    width: auto;
+    border-bottom: 1.6px solid black;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+.txtadbar
+{
+    animation: scroll 40s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+    text-size-adjust: 100%;
+    width: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.txtadbar h5
+{
+    padding-right: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* hoodies  */
+
+/* aboutus */
+.sobrenosotros
+{
+    display: flex;
+    width: 100%;
+}
+.sobrenosotroscentro
+{
+    border-bottom: 1.6px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.sobrenosotros h3
+{
+    text-align: center;
+}
+.aboutustxt
+{
+    text-align: center;
+}
+.sobreespacio1
+{
+    border-bottom: 1.6px solid black;
+    width: 32.5%;
+}
+.sobreespacio2
+{
+    border-bottom: 1.6px solid black;
+    width: 32.5%;
+}
+/* sitio precomprar remera */
+
+.compracontenedor
+{
+    width: 100%;
+    border-bottom: 1.6px solid black;
+    display: flex;
+}
+.parteimagenizquierda
+{
+    width: 50%;
+    border-right: 1.6px solid black;
+}
+.partederechapadding
+{
+    width: 50%;
+}
+.partecompraderecha
+{
+    font-family: "Courier Prime"; 
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+input[type="radio"] {
+    display: none;
+}
+.radio-label 
+{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border: 1.6px solid black;
+    text-align: center;
+    line-height: 36px; /* Centra el texto verticalmente */
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: pointer;
+    border-radius: 5px; /* Para que sea cuadrado con esquinas redondeadas */
+}
+input[type="radio"]:checked + .radio-label {
+    border: 2px solid black;
+}
+.radio-label-color
+{
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    margin: 5px;
+    border: 1.6px solid black;
+    text-align: center;
+    line-height: 36px; /* Centra el texto verticalmente */
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: pointer;
+    border-radius: 5px; /* Para que sea cuadrado con esquinas redondeadas */
+}
+input[type="radio"]:checked + .radio-label-color {
+    border: 2px solid black;
+}
+.botoncomprar
+{
+    margin-top: 20px;
+}
+.botoncomprar input
+{
+    font-family: "Courier Prime"; 
+    width: 325px;
+    height: 35px;
+    border: 1.6px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;    
     background-color: black;
+    color: white;
+    text-align: center;
+}
+.guiatallesyreseñas
+{
+    font-weight: bold;
+    margin-top: 15px;
 }
 
-a {
-    text-decoration: none; /* Quita cualquier subrayado */
-    border: none; /* Asegura que no haya bordes en el enlace */
-}
-.logo 
+/*sitio de resenias */
+
+.gobackreseñas
 {
-    margin-right: auto;
+    margin: 20px;
+    font-size: 15px;
 }
-.navmenu
+.reseñas
+{     
+    display: grid;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: "Courier Prime"; 
+}
+.reseña1
 {
-    margin-left: auto;
+    grid-row: 1 / 2;
+    grid-column: 1/2;
+    text-align: center;
+    border: 1.6px solid black;
+}
+.reseña2
+{
+    grid-row: 1/2;
+    grid-column: 2/4;
+    text-align: center;
+    border: 1.6px solid black;
+    border-left: none;
+}
+.reseña3
+{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    border: 1.6px solid black;
+    border-top: none;
+    text-align: center;
+}
+.reseña4
+{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    border: 1.6px solid black;
+    border-left: none;
+    border-top: none;
+    text-align: center;
+}
+.reseña5
+{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    border: 1.6px solid black;
+    border-top: none;
+    text-align: center;
+}
+.escribirreseña
+{
+    grid-row: 3/4 ;
+    grid-column: 2/4;
+    border: 1.6px solid black;
+    border-left: none;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.futurareseña1
+{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    border: 1.6px solid black;
+    border-left: none;
+    border-top: none;
+    text-align: center;
+}
+.futurareseña2
+{
+    grid-row: 4/5;
+    grid-column: 2/4;
+    border: 1.6px solid black;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+}
+.escribirreseña textarea
+{
+    width: 90%;
+    height: 100px;
+    resize: none;
+}
+.escribirreseña form
+{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.escribirreseña input
+{
+    border: 1.6px solid black;
+    border-radius: 2px;
+    font-family: "Courier Prime"; 
+    width: 25%;
+    height: 30px;
+    margin: 10px;
 }

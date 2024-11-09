@@ -591,3 +591,192 @@ input[type="radio"]:checked + .radio-label-color {
     height: 30px;
     margin: 10px;
 }
+
+/*media query */
+
+@media (max-width:500px)
+{
+
+    /*header y footer */
+   
+    .secciones
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedorlista
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon
+    {
+        margin-bottom: 20px;
+    }
+    .email
+    {
+        font-size: 11px;
+    }
+    /* pagina principal */
+    .presentacion
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor1
+    {
+        width: 100%;
+        border-bottom: 1.6px solid black;
+    }
+    .contenedor2
+    {
+        width: 100%;
+        border-bottom: 1.6px solid black;
+        border-left: none;
+        border-right: none;
+    }
+    .contenedor3
+    {
+        width: 100%;
+    }
+    .fondocompleto
+    {
+        height: auto;
+    }
+
+    /*seccion de remeras*/
+
+    .primerafila
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .articulo
+    {
+        width: 100%;
+        border-right: none;
+
+    }
+    aside select
+    {
+       display: flex;
+       align-items: center;
+    }
+    aside
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* seccion de compra */
+
+    .compracontenedor
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .parteimagenizquierda
+    {
+        border-right: none;
+        border-bottom: 1.6px solid black;
+        width: 100%;
+    }
+    .partederechapadding
+    {
+        width: 100%;
+        padding: 0px;
+    }
+    .partecompraderecha
+    {
+        width: 100%;
+        padding: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .botoncomprar input 
+    {
+        width: 240px;
+    }
+    /* about us */
+
+    .sobrenosotroscentro
+    {
+        width: 100%;
+    }
+
+    /*resenias*/
+
+.reseña1
+{
+    grid-row: 1 / 2;
+    grid-column: 1/4;
+    text-align: center;
+    border: 1.6px solid black;
+}
+.reseña2
+{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+    border: 1.6px solid black;
+    border-left: none;
+}
+.reseña3
+{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    border: 1.6px solid black;
+    border-top: none;
+    text-align: center;
+}
+.reseña4
+{
+    grid-row: 4/5;
+    grid-column: 1/4;
+    border: 1.6px solid black;
+    border-left: none;
+    border-top: none;
+    text-align: center;
+}
+.reseña5
+{
+    grid-row: 5/6;
+    grid-column: 1/4;
+    border: 1.6px solid black;
+    border-top: none;
+    text-align: center;
+}
+.escribirreseña
+{
+    grid-row: 6/7 ;
+    grid-column: 1/4;
+    border: 1.6px solid black;
+    border-left: none;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.futurareseña1
+{
+    grid-row: 7/8;
+    grid-column: 1/4;
+    border: 1.6px solid black;
+    border-left: none;
+    border-top: none;
+    text-align: center;
+}
+.futurareseña2
+{
+    grid-row: 4/5;
+    grid-column: 1/4;
+    border: 1.6px solid black;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+}
+
+}

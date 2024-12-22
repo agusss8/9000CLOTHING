@@ -35,7 +35,7 @@
                 <a href="seccionremeras.html"><img src="magnifying-glass.png" alt="user" width="26px" height="26px"></a>
             </li>
              <li class="icon">
-                <a href="seccionremeras.html"><img src="shopping-bag.png" alt="search" width="26px" height="26px"></a>
+                <a href="carrito.html"><img src="shopping-bag.png" alt="search" width="26px" height="26px" id="chequearcarrito"></a>
              </li>
              <li class="icon">
                 <a href="seccionremeras.html"><img src="avatar.png" alt="cart" width="26px" height="26px"></a>
@@ -50,14 +50,14 @@
 <div class="compracontenedor">
 
     <div class="parteimagenizquierda">
-        <img src="camisetasnani/125f9dd6-b135-4d92-a88e-475355000010_rw_1920.png" alt="remera" width="100%">
+        <img src="camisetasnani/125f9dd6-b135-4d92-a88e-475355000010_rw_1920.png" alt="remera" width="100%" id="imagencompracarrito">
     </div>
     
     <div class="partederechapadding">
 
         <div class="partecompraderecha">
-            <h1>REMERA EXAMPLE LOREM - GRAY/GREEN</h1>
-            <h1>$214.503,00</h1>
+            <h1 id="NombreProducto">REMERA EXAMPLE LOREM - GRAY/GREEN</h1>
+            <h1 id="PrecioProducto">$214.503,00</h1>
             <p><a href="seccionremeras.html">&#8592; Volver al catalogo</a></p>
             <p>Talle:</p>
             <div class="selectorestalle">
@@ -84,15 +84,15 @@
             <p>Color:</p>
             <div class="selectorescolor">
                 <form action="">
-                    <input type="radio" id="negroinput" name="option" value="Negro">
+                    <input type="radio" id="negroinput" name="optioncolor" value="Negro">
                     <label for="negroinput" class="radio-label-color">Negro</label>
     
-                    <input type="radio" id="blancoinput" name="option" value="Blanco">
+                    <input type="radio" id="blancoinput" name="optioncolor" value="Blanco">
                     <label for="blancoinput" class="radio-label-color">Blanco</label>
                 </form>
             </div>
             <div class="botoncomprar">
-                <input type="button" value="Añadir al carrito &#8594;">
+                <input type="button" value="Añadir al carrito &#8594;" id="botonaniadircarrito">
             </div>
             <div class="guiatallesyreseñas">
                 <p><a href="seccionremeras.html">- Guia de talles</a></p>
@@ -165,6 +165,6 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 </html>

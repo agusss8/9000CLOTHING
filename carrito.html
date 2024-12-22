@@ -13,61 +13,60 @@
     <link rel="icon" href="9000logo.png" type="png">
 </head>
 <body>
-    <header>
+<header>
 
-        <div class="secciones">
-            <h4 class="seccion"><a href="index.html">NEW DROPS</a></h4>
-            <h4 class="seccion"><a href="seccionremeras.html">T-SHIRTS</a></h4>
-            <h4 class="seccion"><a href="hoodies.html">HOODIES</a></h4>
-            <h4 class="seccion"><a href="aboutus.html">ABOUT US</a></h4>
-        </div>
-    
-       <div class="logo">
-            <a href="index.html" class="logo">
-                <img src="9000logo.png" alt="9000CLOTHING" width="110px" height="65px">
-            </a>
-       </div> 
-    
-    
-        <nav class="navcontainer">
-            <ul class="contenedorlista">
-                <li class="icon">
-                    <a href="seccionremeras.html"><img src="magnifying-glass.png" alt="user" width="26px" height="26px"></a>
-                </li>
-                 <li class="icon">
-                    <a href="carrito.html"><img src="shopping-bag.png" alt="search" width="26px" height="26px" id="chequearcarrito"></a>
-                 </li>
-                 <li class="icon">
-                    <a href="seccionremeras.html"><img src="avatar.png" alt="cart" width="26px" height="26px"></a>
-                 </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="secciones">
+        <h4 class="seccion"><a href="index.html">NEW DROPS</a></h4>
+        <h4 class="seccion"><a href="seccionremeras.html">T-SHIRTS</a></h4>
+        <h4 class="seccion"><a href="hoodies.html">HOODIES</a></h4>
+        <h4 class="seccion"><a href="aboutus.html">ABOUT US</a></h4>
+    </div>
+
+   <div class="logo">
+        <a href="index.html" class="logo">
+            <img src="9000logo.png" alt="9000CLOTHING" width="110px" height="65px">
+        </a>
+   </div> 
+
+
+    <nav class="navcontainer">
+        <ul class="contenedorlista">
+            <li class="icon">
+                <a href="seccionremeras.html"><img src="magnifying-glass.png" alt="user" width="26px" height="26px"></a>
+            </li>
+             <li class="icon">
+                <a href="carrito.html" id="chequearcarrito"><img src="shopping-bag.png" alt="search" width="26px" height="26px"></a>
+             </li>
+             <li class="icon">
+                <a href="seccionremeras.html"><img src="avatar.png" alt="cart" width="26px" height="26px"></a>
+             </li>
+        </ul>
+    </nav>
+</header>
 
 
 
 <main>
 
-<article class="adbar">
-    <h5 class="txtadbar">NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 -</h5>
-    <h5 class="txtadbar">NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 - NEW DROPS 333 -</h5>
-</article>
+    <div class="carritocontenedor">
+        <div class="textocarrito">
+            <h2 id="carritotextotitulo">Carrito</h2>
+            <button type="button" id="botonverificarcarrito" onclick="verificarProductosEnLocalStorage()">Verificar Articulos del carrito</button>
+            <button type="button" id="borrarcarrito" onclick="VaciarCarrito()">Borrar Articulos del carrito</button>
+            <button type="button" id="finalizarcomprabtn">Finalizar Compra</button>
+            <a href="apipoke.html"><button type="button" id="pokeapiacceso">Descubre que pokemon eres hoy!</button></a>
+        </div>
+        <div class="productoscarritoart">
+            <h2 id="productoscarrito">CLICKEA EL BOTON PARA VERIFICAR TUS ARTICULOS EN TU CARRITO</h2>
+            <ul id="listaproductos"> </ul>
 
-<article class="presentacion">
-    <div class="contenedor1">
-        <a href="seccionremeras.html"> <img src="camisetasnani/e2687f40-42e9-4130-8150-9f317229e16d_rw_1920.png" alt="fondo1" width="100%"> </a>
-    </div>
-    <div class="contenedor2">
-        <a href="seccionremeras.html"> <img src="camisetasnani/fondo3.png" alt="fond1" width="100%"> </a>
-    </div>
-    <div class="contenedor3">
-        <a href="seccionremeras.html"> <img src="camisetasnani/333remera.png" alt="fond23" width="100%"> </a>            
-    </div>
+            <div class="preciofinalclase">
+                <h2 id="preciofinal"></h2>
+            </div>
+        </div>
 
-</article>
-<article class="fondocompleto">
-    <img src="camisetasnani/fondo4.png" alt="" width="100%">
-</article>
+
+    </div>
 
 </main>
 
@@ -127,7 +126,7 @@
 
 
 
-<script src="script.js"></script>
 
+<script src="script.js"></script>
 </body>
 </html>

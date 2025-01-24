@@ -425,6 +425,16 @@ footer p
     flex-direction: column;
     padding-left: 2%;
 }
+#PrecioProducto
+{
+    font-size: 32px;
+}
+#NombreProducto
+{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
 input[type="radio"] {
     display: none;
 }
@@ -591,29 +601,26 @@ input[type="radio"]:checked + .radio-label-color {
     height: 30px;
     margin: 10px;
 }
-.carritocontenedor
+
+/*CARRITO */
+#carritocontenedor
 {
     border-bottom: 1.6px solid black;
     display: flex;
-    height: 500px;
+    height: 700px;
     width: 100%;
 }
-.textocarrito
-{
-    width: 25%;
-    border-right: 1.6px solid black;
-    display: flex;
-    flex-direction: column;
-}
+
 #productoscarrito
 {
     margin-left: 40px;
     margin-top: 40px;
+    border-bottom: 1.6px solid black;
 
 }
 .productoscarritoart
 {
-    width: 75%;
+    width: 100%;
 }
 #carritotexto
 {
@@ -631,6 +638,31 @@ input[type="radio"]:checked + .radio-label-color {
     display: flex;
     flex-direction: column;
 }
+.productomostradoencarrito
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    border-bottom: 1.6px solid black;
+}
+.contenedortextoproductos
+{
+    width: 20%;
+    text-align: left;
+    padding-top: 20px;
+}
+.contenedorimagenproductos
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.contenedortotalaislado
+{
+    width: 60%;
+    text-align: center;
+}
 #listaproductos li
 {
     font-size: 17px;
@@ -638,6 +670,7 @@ input[type="radio"]:checked + .radio-label-color {
 #preciofinal
 {
     margin-left: 40px;
+    text-align: right;
 }
 #carritotextotitulo
 {
@@ -653,6 +686,9 @@ input[type="radio"]:checked + .radio-label-color {
     height: 40px;
     margin: 10px;
 }
+
+/*API*/
+
 #pokeapiacceso
 {
     height: 40px;

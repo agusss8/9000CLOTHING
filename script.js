@@ -45,11 +45,14 @@ function GuardarProductoEnLocalStorage(producto)
     localStorage.setItem('productos', JSON.stringify(productos));
 }
 
-const BotonAniadirCarrito = document.getElementById("botonaniadircarrito")
 
-BotonAniadirCarrito.addEventListener("click",function()
-
+if (document.getElementById("botonaniadircarrito") != null)
 {
+    const BotonAniadirCarrito = document.getElementById("botonaniadircarrito")
+
+    BotonAniadirCarrito.addEventListener("click",function()
+
+    {
        const NuevoProducto = ObtenerProducto();
        if(NuevoProducto)
        {
@@ -57,20 +60,29 @@ BotonAniadirCarrito.addEventListener("click",function()
         console.log("Nuevo producto añadido:", NuevoProducto)
         alert('Producto Añadido al Carrito')
        }
-}
+    }
 
 )
+}
 
+
+function CambiarResolucion()
+{
+    const CarritoHeight = document.getElementById("carritocontenedor")
+    CarritoHeight.style.height = "auto";    
+}
 
 
 // Función para verificar y mostrar productos en el carrito lo ejecuto en onclick en el archivo html porque por eventlistener nose porque no me dejo
 function verificarProductosEnLocalStorage() {
 
     
+
     const productos = JSON.parse(localStorage.getItem("productos"));
     const titulo = document.getElementById("productoscarrito");
-    const listaProductos = document.getElementById("listaproductos");
+  /*  const listaProductos = document.getElementById("listaproductos"); */
     const precioFinal = document.getElementById("preciofinal");
+    const divElement = document.querySelector(".productosjsoncontenedor");
     if (productos != null) {
    
         var contadorprecio = 0;
@@ -78,20 +90,99 @@ function verificarProductosEnLocalStorage() {
 
         titulo.textContent = "Tienes " + contadorproductos + " productos en el carrito!";
 
-        listaProductos.innerHTML = "";
-        productos.forEach((producto, index) => {
-            const li = document.createElement("li");
-            const img = document.createElement("img")
+        
+        if(productos.length > 2)
+        {
+            CambiarResolucion()
+        }
+
+        productos.forEach((producto) => {
+            
+            /*const DivProductoContenedor = document.createElement("div")
+            DivProductoContenedor.classList.add("productomostradoencarrito");
+            divElement.appendChild(DivProductoContenedor)
+
+            const DivContenedorImagen = document.createElement("div")
+            DivContenedorImagen.classList.add("contenedorimagenproductos")
+
+            const DivTextoProductos = document.createElement("div")
+            DivTextoProductos.classList.add("contenedortextoproductos")
+
+            const DivTotalAislado = document.createElement("div")
+            DivTotalAislado.classList.add("contenedortotalaislado")
+            
+            DivProductoContenedor.appendChild(DivTotalAislado)
+            DivProductoContenedor.appendChild(DivTextoProductos)
+            DivProductoContenedor.appendChild(DivContenedorImagen) */
+            
+
+
+            
+           /* const img = document.createElement("img")
             img.src = producto.imagen
+            img.alt = "Producto Imagen"
             img.style.width = "200px"
             img.style.height = "200px"
-            li.textContent = `Producto ${index + 1}: Nombre: ${producto.nombre}, Precio: $${producto.precio}, Talle: ${producto.talle}, Color: ${producto.color} `;
-            listaProductos.appendChild(li);
+            DivContenedorImagen.appendChild(img) */
+
+            /*const nombreprod = document.createElement("p");
+            const precioprod = document.createElement("p");
+            const talleprod = document.createElement("p");
+            const colorprod = document.createElement("p");
+
+            
+
+            nombreprod.textContent = `${producto.nombre}`;
+            precioprod.textContent = `$${producto.precio} `;
+            talleprod.textContent = `Talle: ${producto.talle}`;
+            colorprod.textContent = `Color: ${producto.color} `;
+            
+            DivTextoProductos.appendChild(nombreprod);
+            DivTextoProductos.appendChild(precioprod);
+            DivTextoProductos.appendChild(talleprod);
+            DivTextoProductos.appendChild(colorprod); */
+
+           /* DivContenedorImagen.insertAdjacentHTML("beforeend", 
+                `<img src="${producto.imagen}" alt="${producto.nombre}" style="width: 200px; height: 200px; object-fit: cover;">`)
+            
+
+            DivTextoProductos.insertAdjacentHTML("beforeend", 
+                `<p> ${producto.nombre} </p>
+                <p> ${producto.precio} </p>
+                <p> ${producto.talle} </p>
+                <p> ${producto.color} </p>`) 
+
+
+
+            
+            DivTotalAislado.insertAdjacentHTML ("beforeend", 
+                `<p>$${producto.precio} </p>`)  */  
+           divElement.insertAdjacentHTML("afterend", 
+            `
+            <div class="productomostradoencarrito">
+
+                    <div class="contenedortotalaislado">
+                    <p>$${producto.precio} </p>
+                    </div>
+
+                    <div class="contenedortextoproductos">
+                    <p> ${producto.nombre} </p>
+                    <p> $${producto.precio}</p>
+                    <p> Talle: ${producto.talle} </p>
+                    <p> Color: ${producto.color} </p>
+                    </div>
+
+                    <div class="contenedorimagenproductos"><img src=${producto.imagen} alt="${producto.nombre}" style="width: 200px; height: 200px; object-fit: cover;"></div>
+            </div>
+            `)
+
+
+            
 
             contadorprecio += parseFloat(producto.precio);
         });
 
-        precioFinal.textContent = "El precio final es de: $"+ contadorprecio;
+        precioFinal.textContent = "El precio final es de: $"+ contadorprecio.toFixed(2);
 
     } else {
         titulo.textContent = "Nada seleccionado para comprar";
@@ -150,3 +241,15 @@ function obtenerPokemonRandom() {
 }
 
 
+
+
+if (window.location.pathname.endsWith("carrito.html")) 
+
+    {
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            verificarProductosEnLocalStorage();
+            console.log("Hola")
+
+        });
+    }

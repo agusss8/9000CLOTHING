@@ -18,6 +18,3 @@ $ git push -u origin main para subirlo finalmente a git a mi repositorio online
 
 $ git status para saber el estado de mis archivos y ver si estan o no en la nube
 
-reemplazar index.html por seccionremeras.html
-
-reemplazar paginaprincipal.html por index.html 

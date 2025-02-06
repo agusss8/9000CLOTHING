@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
    
     <title>9000CLOTHING</title>
@@ -50,17 +54,62 @@
 
     <div id="carritocontenedor">
         <div class="productoscarritoart">
-            <h2 id="productoscarrito"></h2>
-            
-            <div class="productosjsoncontenedor">
-                
+            <div class="titulocarrito">
+                <h2 id="productoscarrito">CARRITO DE COMPRAS</h2>
+                <p id="seguircomprandocarrito">
+                    <a href="index.html">&#8592; Seguir comprando</a>
+                </p>
                 
             </div>
             
+            
+            <div class="contenedorcarritoflexbox">
 
-            <div class="preciofinalclase">
-                <h2 id="preciofinal"></h2>
+                <div class="contenedorizquierdacarrito" id="contenedorizquierdacarritoid"> 
+                    <div class="contenedorlabelscarrito">
+
+                    </div>
+
+                    <div class="productosjsoncontenedor">
+                        <h2>No hay productos para mostrar</h2>
+                    
+                    </div>
+                </div>
+
+            
+                <div class="preciofinalclase">
+
+                    <span id="resumencompraspan">Resumen de compra</span>
+                    <span id="preciofinal"></span>
+                    <div class="contenedor-envio">
+                        <span id="contenedorimagenfurgoneta"><img src="furgoneta-de-reparto.png" alt="imagen-envio" width="22px"> <span id="textomediosdeenvio">Medios de envio</span></span>
+                        <div class="inputsenvios">
+                            <input type="number" name="CP" id="inputcodigopostal" placeholder="Tu codigo postal" min="0">
+                            <input type="button" value="&rarr;" id="botonverificarcp">
+                        </div>
+                        <span class="encontra-tu-cp">
+                            <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank">Encontra tu codigo postal aqui</a>
+                        </span>
+                        <div class="envios-inner-cp">       
+
+                        </div>
+                    </div>
+                    
+                    <div class="contenedorpreciofinalcheckout">
+                        <p id="preciofinalfinal">Total: $42.4325</p>
+                    </div>
+
+                    <div class="contenedorcheckoutbotones">
+                        <input type="button" value="Iniciar Compra" id="botoncheckout" >
+                        <a href="seccionremeras.html" id="seguircomprandolink">Seguir comprando</a>
+                    </div>
+
+                </div>
+
             </div>
+                
+
+
         </div>
 
 
@@ -128,3 +177,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+

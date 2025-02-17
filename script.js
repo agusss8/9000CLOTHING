@@ -491,6 +491,8 @@ document.addEventListener("DOMContentLoaded", () => {
             
 
             verificarProductosEnLocalStorage()
+
+            
     }
 })
 })
@@ -732,8 +734,8 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             preciofinalfinal.innerHTML = `Precio Total: $${(contadorpreciofinal).toFixed(2)}`
-               
-            
+            document.getElementById("inputcodigopostal").setAttribute("value","")
+           
         }
 
     })

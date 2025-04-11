@@ -52,8 +52,14 @@ header {
     border-bottom: 1.6px solid black;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
+}
+.contenedormediaheader
+{
+    display: flex;
+    width: 59.5%;
+    
 }
 .seccion
 {
@@ -517,114 +523,24 @@ input[type="radio"]:checked + .radio-label-color {
 {
     font-weight: bold;
     margin-top: 15px;
-}
-
-/*sitio de resenias */
-
-.gobackreseñas
-{
-    margin: 20px;
-    font-size: 15px;
-}
-.reseñas
-{     
-    display: grid;
-    grid-template-rows: 250px 250px 250px 250px;
-    grid-template-columns: repeat(2, 1fr);
-    font-family: "Courier Prime"; 
-}
-.reseña1
-{
-    grid-row: 1 / 2;
-    grid-column: 1/2;
-    text-align: center;
-    border: 1.6px solid black;
-}
-.reseña2
-{
-    grid-row: 1/2;
-    grid-column: 2/4;
-    text-align: center;
-    border: 1.6px solid black;
-    border-left: none;
-}
-.reseña3
-{
-    grid-row: 2/3;
-    grid-column: 1/2;
-    border: 1.6px solid black;
-    border-top: none;
-    text-align: center;
-}
-.reseña4
-{
-    grid-row: 2/3;
-    grid-column: 2/4;
-    border: 1.6px solid black;
-    border-left: none;
-    border-top: none;
-    text-align: center;
-}
-.reseña5
-{
-    grid-row: 3/4;
-    grid-column: 1/2;
-    border: 1.6px solid black;
-    border-top: none;
-    text-align: center;
-}
-.escribirreseña
-{
-    grid-row: 3/4 ;
-    grid-column: 2/4;
-    border: 1.6px solid black;
-    border-left: none;
-    border-top: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.futurareseña1
-{
-    grid-row: 4/5;
-    grid-column: 1/2;
-    border: 1.6px solid black;
-    border-left: none;
-    border-top: none;
-    text-align: center;
-}
-.futurareseña2
-{
-    grid-row: 4/5;
-    grid-column: 2/4;
-    border: 1.6px solid black;
-    border-top: none;
-    border-left: none;
-    text-align: center;
-}
-.escribirreseña textarea
-{
-    width: 90%;
-    height: 100px;
-    resize: none;
-}
-.escribirreseña form
-{
-    width: 100%;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    justify-content: left;
 }
-.escribirreseña input
+#guiadetallesbtn
 {
-    border: 1.6px solid black;
-    border-radius: 2px;
-    font-family: "Courier Prime"; 
-    width: 25%;
-    height: 30px;
-    margin: 10px;
+    background-color: white;
+    font-size: 18px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border: none;
+    text-align: left;
+    padding-bottom: 20px;
+
 }
+
 
 /*CARRITO */
 #carritocontenedor
@@ -714,6 +630,11 @@ input[type="radio"]:checked + .radio-label-color {
 .productonombrecarritop
 {
     font-weight: 600;
+}
+.contenedorimagenproductos img
+{
+    width: 200px;
+    height: 200px;
 }
 .contenedortextoproductos
 {
@@ -1007,13 +928,34 @@ input[type="radio"]:checked + .radio-label-color {
 {
 
     /*header y footer */
-   
+   header
+   {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .contenedormediaheader
+   {
+    width: 100%;
+    border-bottom: 1.6px solid black;
+    display: flex;
+    justify-content: right;
+   }
     .secciones
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
         text-align: center;
-        width: 33.3%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .navcontainer
+    {
+        margin-left: 0;
+    }
+    .logo
+    {
+        padding-right: 0px;
     }
     .seccion
     {
@@ -1023,15 +965,21 @@ input[type="radio"]:checked + .radio-label-color {
     .contenedorlista
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
-        align-items: center;
-        margin-right: none ;
-        margin-left: 20px;
+        justify-content: space-between;
+        margin: 10px;
+        margin-top: 28px;
+    }
+    .contenedorlista img
+    {
+        width: 22px;
+        height: 22px;
     }
     .icon
     {
         margin-bottom: 20px;
+        margin-right: 0px;
     }
     .email
     {
@@ -1140,77 +1088,114 @@ input[type="radio"]:checked + .radio-label-color {
         width: 100%;
     }
 
-    /*resenias*/
+    /* carrito */
 
-    .reseña1
+    .contenedortextoproductos
     {
-        grid-row: 1 / 2;
-        grid-column: 1/4;
-        text-align: center;
-        border: 1.6px solid black;
+        font-size: 13px;
     }
-    .reseña2
+    .contenedorimagenproductos img
     {
-        grid-row: 2/3;
-        grid-column: 1/4;
-        text-align: center;
-        border: 1.6px solid black;
-        border-left: none;
+        width: 120px;
+        height: 120px;
     }
-    .reseña3
+
+}
+@media (max-width: 900px)
+{
+    .contenedorcarritoflexbox
     {
-        grid-row: 3/4;
-        grid-column: 1/4;
-        border: 1.6px solid black;
-        border-top: none;
-        text-align: center;
-    }
-    .reseña4
-    {
-        grid-row: 4/5;
-        grid-column: 1/4;
-        border: 1.6px solid black;
-        border-left: none;
-        border-top: none;
-        text-align: center;
-    }
-    .reseña5
-    {
-        grid-row: 5/6;
-        grid-column: 1/4;
-        border: 1.6px solid black;
-        border-top: none;
-        text-align: center;
-    }
-    .escribirreseña
-    {
-        grid-row: 6/7 ;
-        grid-column: 1/4;
-        border: 1.6px solid black;
-        border-left: none;
-        border-top: none;
-        display: flex;
-        align-items: center;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
-    .futurareseña1
+    .contenedorizquierdacarrito
     {
-        grid-row: 7/8;
-        grid-column: 1/4;
-        border: 1.6px solid black;
-        border-left: none;
-        border-top: none;
-        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
     }
-    .futurareseña2
+    .preciofinalclase
     {
-        grid-row: 4/5;
-        grid-column: 1/4;
-        border: 1.6px solid black;
-        border-top: none;
-        border-left: none;
-        text-align: center;
+        width: 90%;
     }
+    .contenedortextoproductos
+    {
+        padding-left: 20px;
+    }
+    .preciofinalclase
+    {
+        height: auto;
+    }
+}
 
+@media (min-width: 501px) and (max-width: 740px)
+{
+        /*header y footer */
+   header
+   {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .contenedormediaheader
+   {
+    width: 100%;
+    border-bottom: 1.6px solid black;
+    display: flex;
+    justify-content: right;
+   }
+    .secciones
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .navcontainer
+    {
+        margin-left: 0;
+    }
+    .logo
+    {
+        padding-right: 0px;
+    }
+    .seccion
+    {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .contenedorlista
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin: 10px;
+        margin-top: 28px;
+    }
+    .contenedorlista img
+    {
+        width: 22px;
+        height: 22px;
+    }
+    .icon
+    {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    .email
+    {
+        font-size: 11px;
+    }
+    .logo
+    {
+        margin-right: 0px;
+    }
+    .listaitemsmenufooter li p
+    {
+        font-size: 14px;
+        font-weight: 800;
 
+    }
 }

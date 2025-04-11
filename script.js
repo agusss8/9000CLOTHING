@@ -151,7 +151,7 @@ function verificarProductosEnLocalStorage() {
                 
                     <div class="productomostradoencarrito" id="producto${producto.id}">
             
-                            <div class="contenedorimagenproductos"><img src=${producto.imagen} alt="${producto.nombre}" style="width: 200px; height: 200px; object-fit: cover;"></div>
+                            <div class="contenedorimagenproductos"><img src=${producto.imagen} alt="${producto.nombre}" style="object-fit: cover;"></div>
             
                             <div class="contenedortextoproductos">
                             <p class="productonombrecarritop"> ${producto.nombre} </p>
@@ -810,6 +810,32 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+    const guiadetalles = document.querySelector(".guiatallesyreseñas");
+    if (guiadetalles !== null) {
+        guiadetalles.addEventListener("click", (e) => {
+            if (e.target && e.target.id === "guiadetallesbtn") {
+                const btn = e.target;
+                if (btn.value === "+ Guia de talles") {
+                    guiadetalles.innerHTML = `
+                        <div class="contenedorinputtalles">
+                            <input type="button" id="guiadetallesbtn" value="- Guia de talles">
+                        </div>
+                        <img src="tabladetallesremeras.png" alt="tabla de talles" width="400px">
+                    `;
+                } else {
+                    guiadetalles.innerHTML = `
+                        <div class="contenedorinputtalles">
+                            <input type="button" id="guiadetallesbtn" value="+ Guia de talles">
+                        </div>
+                    `;
+                }
+            }
+        });
+    }
+});
+
+
 
 
 if (window.location.pathname.endsWith("carrito.html")) 
@@ -818,9 +844,6 @@ if (window.location.pathname.endsWith("carrito.html"))
         document.addEventListener("DOMContentLoaded", () => {
             
             verificarProductosEnLocalStorage();
-
-
-
 
 
         });
